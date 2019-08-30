@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+
+<style>
+#divcls {
+  background: pink;
+  height: 200px;
+  width:300px;
+  border-radius: 15px;
+  padding:20px;
+  font-size:22px;
+  color:#fff;   
+}
+
+</style>
+ 
+  
+</head>
+<body>
+<div id="divcls"></div>
+<p><button class="btncls" onclick="clearint()"> Stop color change by clearInterval</button></p>
+<script>
+
+var stoptoggle = setInterval(function(){ func_setInterval() }, 500);
+
+function func_setInterval(){
+if (document.getElementById("divcls").style.backgroundColor == 'orange'){
+    document.getElementById("divcls").style.backgroundColor = 'blue';
+}
+else{
+    document.getElementById("divcls").style.backgroundColor = 'orange';
+}
+
+}
+function clearint(){
+    clearInterval(stoptoggle);
+}
+    
+</script> 
+ 
+</body>
+</html>

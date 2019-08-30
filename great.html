@@ -1,0 +1,32 @@
+<html>
+<body>
+<h2> javascript </h2>
+<p id="demo"></p>
+<p id="sqr"></p>
+<script>
+var hello;
+hello = () => "hello world";
+document.getElementById("demo").innerHTML=hello();
+const square=(x) => x* x;
+document.getElementById("demo").innerHTML=square(10);
+
+var great=(a,b) => {
+    if(a>b) { 
+        document.write("<br>" +a+ "is greater");
+    }
+    else{
+        document.write("<br>" +b+ "is greater");
+    }
+    return great;
+};
+
+var points=(multiplier, bonus) => {
+    var score= multiplier *10;
+    score*= (1+bonus);
+    return score;
+}
+document.write(points(3,2));
+great(100,99);
+</script>
+</body>
+</html>

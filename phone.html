@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>enter phn no n press enter</p>
+<form action="">
+<input name="txtPhone" onchange="PhoneValidation(this);">
+</form>
+<script>
+var reg=/^\d{10}$/;
+function PhoneValidation(phoneNumber)
+{
+    var OK = reg.exec(phoneNumber.value);
+    if(!OK)
+        window.alert("phn no isnt valid");
+    else
+        window.alert("phn no is valid");
+}
+</script>
+</body>
+</html>
+
+
